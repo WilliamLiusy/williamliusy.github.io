@@ -124,7 +124,12 @@ a:hover {
 
 /* ===== 主内容区域 ===== */
 #main {
-  padding: 40px 0;
+  padding: 50px 20px;
+}
+
+.container .outer {
+  max-width: 1100px;
+  padding: 0 30px;
 }
 
 /* ===== 文章卡片美化 ===== */
@@ -191,6 +196,8 @@ a:hover {
   color: var(--text-color);
   font-size: 1.05em;
   line-height: 1.9;
+  max-width: 100%;
+  overflow-x: auto;
 }
 
 .article-entry p {
@@ -349,10 +356,11 @@ a:hover {
 .article-entry .highlight {
   background: #1e1e1e !important;
   border-radius: 10px;
-  margin: 25px -30px;
+  margin: 25px 0;
   padding: 25px 30px;
   border: none;
   box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.3);
+  overflow-x: auto;
 }
 
 .article-entry pre code {
@@ -469,28 +477,40 @@ a:hover {
   #header {
     height: 220px;
   }
-  
+
   #logo {
     font-size: 24px;
   }
-  
+
   .article-header,
   .article-entry {
     padding: 20px;
   }
-  
+
   .article-title {
     font-size: 1.4em;
   }
-  
+
   .archive-article-inner {
     padding: 15px 20px;
   }
-  
+
   .article-entry pre,
   .article-entry .highlight {
-    margin: 20px -20px;
+    margin: 20px 0;
     padding: 20px;
+  }
+
+  .container .outer {
+    padding: 0 20px;
+  }
+}
+
+/* ===== 大屏幕优化 ===== */
+@media screen and (min-width: 1400px) {
+  .container .outer {
+    max-width: 1300px;
+    padding: 0 40px;
   }
 }
 
